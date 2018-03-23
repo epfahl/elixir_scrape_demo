@@ -7,7 +7,7 @@
 Go to Amazon and grab a book ASIN from the URL.  If you navigate to a book page, the URL will look something like
 
 ```
-https://www.amazon.com/Harry-Potter-Chamber-Secrets-Rowling-ebook/dp/B0192CTMW8/ref=pd_sim_351_2?_encoding=UTF8&psc=1&refRID=HWRVTMXE20PHEPFX2MBH
+https://www.amazon.com/Harry-Potter-Chamber-Secrets-Rowling-ebook/dp/B0192CTMW8/...
 ```
 
 The ASIN is the string right after `dp`.  In this case, the ASIN is `B0192CTMW8`.
