@@ -1,4 +1,6 @@
 defmodule ElixirScrapeDemo.Html do
+  @url_base ~S("https://www.amazon.com/dp/#{asin}")
+
   def get_html_by_asin(asin) do
     asin
     |> get_url_by_asin()
@@ -11,6 +13,8 @@ defmodule ElixirScrapeDemo.Html do
   end
 
   defp get_url_by_asin(asin) do
-    "https://www.amazon.com/dp/#{asin}"
+    asin
+    |> (&Code.eval_string(@url_base, asin: &1)).()
+    |> elem(0)
   end
 end
