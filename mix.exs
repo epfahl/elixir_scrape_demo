@@ -5,7 +5,7 @@ defmodule ElixirScrapeDemo.MixProject do
     [
       app: :elixir_scrape_demo,
       version: "0.1.0",
-      elixir: "~> 1.6",
+      elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
@@ -21,8 +21,8 @@ defmodule ElixirScrapeDemo.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:httpoison, "~> 1.0"},
-      {:floki, "~> 0.20.0"}
+      {:httpoison, "~> 1.3"},
+      {:floki, "~> 0.20.4"}
     ]
   end
 end
